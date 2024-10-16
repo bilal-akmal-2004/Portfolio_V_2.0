@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+a{
+    text-decoration: none !important;
+    color: black !important;
+    font-size: 26px;
+}
+
+/* navbar hwew css */
+.nav{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(60, 58, 58, 0.5);
+}
+.middle-bar{
+    display: flex;
+    gap: 20px;
+}
+.middle-bar a,.right-anchor-bar{
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
+}
+.middle-bar a:hover,.right-anchor-bar:hover{
+    
+    background-color: rgba(227, 227, 227, 0.798);
+}
+.nav img{
+    cursor: pointer;
+    border-radius: 40px;
+}
+.px700-navbar-RHS-button{
+   display: none;
+}
+.btn-primary{
+    background-color: white !important;
+    border: none !important;
+}
+.fa-bars{
+    color: black;
+    font-size: 22px;
+}
+/* media query herer */
+@media (max-width: 700px) {
+    .px700-navbar-RHS-button{
+        display: block;
+     }
+     .right-anchor-bar{
+        display: none;
+     }
+     .middle-bar{
+        display: none;
+     }
+}
